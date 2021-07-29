@@ -19,15 +19,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           
-  KICS:
-    name: KICStest
-    runs-on: ubuntu-latest
+  checkfolder:
+    name: checkfolder
+    runs-on: windows-latest
     steps:
       - run: ls
       - run: cd terraform
       - run: ls
       - run: cd docker 
       - run: ls
+  KICS:
+    name: KICStest
+    runs-on: ubuntu-latest
+    steps:
       - name: KICS Github Action
         uses: checkmarx/kics-action@v1.2
         with:
