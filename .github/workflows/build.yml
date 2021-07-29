@@ -23,13 +23,11 @@ jobs:
     name: KICStest
     runs-on: ubuntu-latest
     steps:
-      - name: check workspace
-        run: ls
       - name: KICS Github Action
         uses: checkmarx/kics-action@v1.2
         with:
           # scanning two directories: ./terraform/ ./cfn-templates/ plus a single file
-          path: 'terraform'
+          path: 'terraform/docker'
           output_path: 'results.json'
       # Display the results in json format
       - name: display kics results
