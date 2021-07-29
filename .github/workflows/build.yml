@@ -23,7 +23,6 @@ jobs:
     name: checkfolder
     runs-on: ubuntu-latest
     steps:
-      - name: commandgroup
       - run: |
           echo 'Hello World!'
           echo 'Hello again!
