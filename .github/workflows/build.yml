@@ -26,6 +26,7 @@ jobs:
       - run: |
           echo 'Hello World!'
           echo 'Hello again!'
+          ls
   KICS:
     name: KICStest
     runs-on: ubuntu-latest
