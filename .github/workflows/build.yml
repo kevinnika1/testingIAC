@@ -30,7 +30,7 @@ jobs:
           ls
           cd ..
           ls
-          cd testingIAC
+          cd _temp
           ls
   KICS:
     name: KICStest
