@@ -2,7 +2,6 @@
 
 This project aims to be a complete (although simple) infrastructure as code solution.
 
-**[WIP] Note that this is still work in progress.**
 
 ## Goals
 
