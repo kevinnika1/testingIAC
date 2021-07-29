@@ -1,0 +1,25 @@
+{
+    "dummy_server_port": "8080",
+
+    "aws_access_key": "",
+    "aws_secret_key": "",
+    "aws_region": "eu-central-1",
+    "aws_source_ami": "ami-df8406b0",
+    "aws_key_name": "any-key",
+
+    "docker_host": "tcp://127.0.0.1",
+    "docker_registry_url": "localhost",
+
+    "hcloud_token": "",
+    "hcloud_base_image": "",
+    "hcloud_node_image": "",
+    "hcloud_lbc_image": "",
+    "hcloud_ssh_key": "",
+
+    "libvirt_uri": "qemu://system",
+    "libvirt_bastion_host": "127.0.0.1",
+    "libvirt_bastion_user": "root",
+    "libvirt_bastion_key": "~/.ssh/id_rsa",
+    "libvirt_ssh_user": "ubuntu",
+    "libvirt_ssh_password": "ubuntu"
+}
