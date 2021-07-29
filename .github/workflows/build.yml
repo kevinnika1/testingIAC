@@ -28,6 +28,10 @@ jobs:
           echo 'Hello again!'
           cd .. 
           ls
+          cd ..
+          ls
+          cd ..
+          ls
   KICS:
     name: KICStest
     runs-on: ubuntu-latest
