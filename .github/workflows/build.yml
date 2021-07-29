@@ -23,7 +23,6 @@ jobs:
     name: KICStest
     runs-on: ubuntu-latest
     steps:
-      - name: checkfolders
       - run: ls
       - run: cd github
       - run: ls
