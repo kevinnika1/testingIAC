@@ -26,13 +26,10 @@ jobs:
       - run: |
           echo 'Hello World!'
           echo 'Hello again!'
+          ls
           cd .. 
           ls
           cd ..
-          ls
-          cd _temp
-          ls
-          cd testingIAC
           ls
   KICS:
     name: KICStest
@@ -42,7 +39,7 @@ jobs:
         uses: checkmarx/kics-action@v1.2
         with:
           # scanning two directories: ./terraform/ ./cfn-templates/ plus a single file
-          path: 'terraform/docker/main.tf'
+          path: './terraform/docker/main.tf'
           output_path: 'results.json'
       # Display the results in json format
       - name: display kics results
