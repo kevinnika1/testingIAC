@@ -19,10 +19,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           
-  Checkmarx:
-    name: CheckMarx
+  KICS:
+    name: KICStest
     runs-on: ubuntu-latest
     steps:
-      - name: Checkmarx CxFlow Action
-        uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
+      - name: KICS Github Action
+        uses: Checkmarx/kics-github-action@latest
+        
+    
 
