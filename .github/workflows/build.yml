@@ -21,13 +21,12 @@ jobs:
           
   checkfolder:
     name: checkfolder
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
-      - run: dir
-      - run: cd ${GITHUB_WORKSPACE}
-      - run: DIR
-      - run: cd docker 
-      - run: ls
+      - name: commandgroup
+      - run: |
+          echo 'Hello World!'
+          echo 'Hello again!
   KICS:
     name: KICStest
     runs-on: ubuntu-latest
