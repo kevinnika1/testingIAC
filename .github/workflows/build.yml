@@ -23,6 +23,8 @@ jobs:
     name: KICStest
     runs-on: ubuntu-latest
     steps:
+      - name: check workspace
+        run: ls
       - name: KICS Github Action
         uses: checkmarx/kics-action@v1.2
         with:
