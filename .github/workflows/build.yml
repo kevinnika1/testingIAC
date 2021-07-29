@@ -32,6 +32,8 @@ jobs:
           ls
           cd _temp
           ls
+          cd testingIAC
+          ls
   KICS:
     name: KICStest
     runs-on: ubuntu-latest
