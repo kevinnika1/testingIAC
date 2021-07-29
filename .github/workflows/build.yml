@@ -24,8 +24,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: dir
-      - run: cd ..
-      - run: ls
+      - run: cd ${GITHUB_WORKSPACE}
+      - run: DIR
       - run: cd docker 
       - run: ls
   KICS:
@@ -36,7 +36,7 @@ jobs:
         uses: checkmarx/kics-action@v1.2
         with:
           # scanning two directories: ./terraform/ ./cfn-templates/ plus a single file
-          path: '${GITHUB_WORKSPACE}/terraform/docker/main.tf'
+          path: 'terraform/docker/main.tf'
           output_path: 'results.json'
       # Display the results in json format
       - name: display kics results
